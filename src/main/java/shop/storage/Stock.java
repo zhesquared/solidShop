@@ -8,7 +8,7 @@ import java.util.Map;
 public class Stock {
    private static final Map<String, Product> productStock = getStock();
 
-    private static Map<String, Product> getStock() {
+    public static Map<String, Product> getStock() {
         final Map<String, Product> productStock = new HashMap<>();
         productStock.put("G001", new Guitars("Fender Player Series Tele MN TPL", 737.32, "Fender", GuitarForm.TL, 6));
         productStock.put("G002", new Guitars("Fender AM Pro II Strat MBL", 1934.18, "Fender", GuitarForm.ST, 6));
